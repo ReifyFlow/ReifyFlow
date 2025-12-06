@@ -134,13 +134,13 @@ sequenceDiagram
 
 ReifyFlow 采用微服务化的 **Multi-Repo** 架构，各模块职责分明：
 
-| 仓库名称 | 角色 | 核心职责 | 技术栈 |
-| :--- | :--- | :--- | :--- |
-| **[`reify-protocol`](https://github.com/ReifyFlow/reify-protocol)** | **宪法** | 定义所有组件交互的数据标准（软件定义、硬件映射、日志格式）。**所有开发由此开始。** | JSON Schema |
-| **[`reify-core`](https://github.com/ReifyFlow/reify-core)** | **大脑** | 核心编排引擎。集成 LLM、SVD 解析器、PDF 检索引擎、日志分析器。 | Python (FastAPI) |
-| **[`reify-driver`](https://github.com/ReifyFlow/reify-driver)** | **手脚** | 通用硬件适配器。屏蔽厂商差异，操作 CubeMX/CMake，调用编译器与下载器。 | Python CLI |
-| **[`reify-studio`](https://github.com/ReifyFlow/reify-studio)** | **脸面** | 可视化交互工作台 (VS Code 插件)。提供硬件拓扑图绘制、手册联动阅读。 | TS / React |
-| **[`reify-chips`](https://github.com/ReifyFlow/reify-chips)** | **粮仓** | 芯片知识库。存放 SVD 寄存器定义、Datasheet 索引映射、代码模板。 | Data |
+| 仓库名称 | 核心职责 | 技术栈 |
+| :--- | :--- | :--- |
+| **[`reify-protocol`](https://github.com/ReifyFlow/reify-protocol)** | 定义所有组件交互的数据标准（软件定义、硬件映射、日志格式）。**所有开发由此开始。** | JSON Schema |
+| **[`reify-core`](https://github.com/ReifyFlow/reify-core)** | 核心编排引擎。集成 LLM、SVD 解析器、PDF 检索引擎、日志分析器。 | Python (FastAPI) |
+| **[`reify-driver`](https://github.com/ReifyFlow/reify-driver)** | 通用硬件适配器。屏蔽厂商差异，操作 CubeMX/CMake，调用编译器与下载器。 | Python CLI |
+| **[`reify-studio`](https://github.com/ReifyFlow/reify-studio)** | 可视化交互工作台 (VS Code 插件)。提供硬件拓扑图绘制、手册联动阅读。 | TS / React |
+| **[`reify-chips`](https://github.com/ReifyFlow/reify-chips)** | 芯片知识库。存放 SVD 寄存器定义、Datasheet 索引映射、代码模板。 | Data |
 
 ---
 
