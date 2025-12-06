@@ -1,7 +1,7 @@
 # 🌊 ReifyFlow
 
 <div align="center">
-  <img src="https://github.com/ReifyFlow/.github/blob/main/profile/logo.png" width="120" alt="ReifyFlow Logo" />
+  <img src="https://avatars.githubusercontent.com/u/248118397?s=400&u=0d029fc7994a08e90c07ae40a4fdb80fc5963073&v=4" width="120" alt="ReifyFlow Logo" />
   
   <h3>From Eidos to Matter.</h3>
   <p><b>从理念到物质。下一代 AI 原生嵌入式开发基础设施。</b></p>
