@@ -182,4 +182,30 @@ Project_Root/
 └── Makefile                    # 顶层构建规则
 ```
 
-*Copyright © 2025 ReifyFlow Organization. License:(AGPLv3 + Commercial)* 
+## 🔄 The Workflow (标准工作流)
+
+我们定义了 **T-V-E-L** 标准流程，确保每一步都可控：
+
+1. **Translate (翻译)** : AI 将自然语言需求转化为 **Task Spec** (JSON)。
+2. **Verify (验证)** : `reify-studio` 渲染出硬件连线图，用户进行**可视化确认**。
+3. **Execute (执行)** : `reify-driver` 修改底层配置，生成代码并烧录。
+4. **Loopback (回环)** : 硬件日志回传，AI 进行故障诊断。
+
+---
+
+## 🗺️ MVP Roadmap (当前计划)
+
+目前项目处于 **MVP 开发阶段**，主要聚焦于 STM32F103 的点灯与串口通信闭环。
+
+- [ ] **Step 1**: 完成 `reify-protocol` 协议定义。
+- [ ] **Step 2**: 实现 `reify-driver` 对 STM32CubeMX `.ioc` 文件的读写。
+- [ ] **Step 3**: 跑通 "自然语言 -> 代码生成 -> 硬件运行" 的单向链路。
+- [ ] **Step 4**: 开发 VS Code 插件可视化界面。
+
+---
+
+## 🤝 Join Us
+
+ReifyFlow 是一个开放的实验。如果你对 **AI Agent**、**嵌入式开发自动化** 或 **编译器设计** 感兴趣，欢迎 Star 或提交 PR。
+
+*License: AGPL-3.0 (Core/Driver) & MIT (Protocol/UI)*
